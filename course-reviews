@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .testimonials-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+        }
+
+        .testimonial-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .testimonial-card.large {
+            flex: 1 1 500px;
+        }
+
+        .testimonial-card.small {
+            flex: 1 1 350px;
+        }
+
+        .testimonial-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author-info {
+            display: flex;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .author-logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+        
+        .author-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .author-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .author-name {
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .author-title {
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: auto;
+        }
+
+        .logo-small img {
+            width: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonial-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="testimonials-container">
+        <div class="testimonial-card large">
+            <p class="testimonial-text">
+                "Ronnie's advice is invaluable. He has been a great resource for me on multiple fronts such as fundraising, making strategic intros and overall planning."
+            </p>
+            <div class="testimonial-author-info">
+                <div class="author-logo">
+                    <img src="YOUR_GNGR_LABS_LOGO_URL" alt="GNGR Labs Logo">
+                </div>
+                <div class="author-details">
+                    <span class="author-name">Namik Soltan</span>
+                    <span class="author-title">Founder & CEO GNGR Labs</span>
+                </div>
+                <img class="author-image" src="YOUR_NAMIK_SOLTAN_IMAGE_URL" alt="Namik Soltan">
+            </div>
+        </div>
+
+        <div class="testimonial-card small">
+            <p class="testimonial-text">
+                "Ronnie has been instrumental to our success thus far, providing strategic guidance, facilitating our user acquisition plan and adjusting our product roadmap."
+            </p>
+            <div class="testimonial-author-info">
+                <div class="author-logo">
+                    <img class="logo-small" src="YOUR_GOODIEZ_LOGO_URL" alt="Goodiez Logo">
+                </div>
+                <div class="author-details">
+                    <span class="author-name">John Park</span>
+                    <span class="author-title">Founder & CEO Goodiez</span>
+                </div>
+                <img class="author-image" src="YOUR_JOHN_PARK_IMAGE_URL" alt="John Park">
+            </div>
+        </div>
+
+        <div class="testimonial-card small">
+            <p class="testimonial-text">
+                "Working with Ronnie has been an incredibly enriching experience. I am thankful for his guidance and startup domain expertise. Ronnie is a TRUE pro."
+            </p>
+            <div class="testimonial-author-info">
+                <div class="author-logo">
+                    <img class="logo-small" src="YOUR_SAFESTEPS_LOGO_URL" alt="SAFE Steps Logo">
+                </div>
+                <div class="author-details">
+                    <span class="author-name">Dave Smith</span>
+                    <span class="author-title">Co-Founder & CEO The SAFE Steps</span>
+                </div>
+                <img class="author-image" src="YOUR_DAVE_SMITH_IMAGE_URL" alt="Dave Smith">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
