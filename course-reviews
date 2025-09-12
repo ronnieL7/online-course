@@ -28,11 +28,11 @@
                     <span class="author-title text-sm text-gray-500">Founder & CEO GNGR Labs</span>
                     <div class="author-logo flex-shrink-0 w-20 h-20 mt-2">
                         <!-- GNGR Labs Logo -->
-                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757712263/fe25a1b08844b3b3c1a6af44735e150b.w2896.h747_piu0lk.png" alt="GNGR Labs Logo" class="w-full h-full object-contain">
+                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/fe25a1b08844b3b3c1a6af44735e150b.w2896.h747_piu0lk.png" alt="GNGR Labs Logo" class="w-full h-full object-contain">
                     </div>
                 </div>
                 <!-- Namik Soltan image -->
-                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757711669/download_kwyuwc.jpg" alt="Namik Soltan">
+                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/download_kwyuwc.jpg" alt="Namik Soltan">
             </div>
         </div>
 
@@ -47,11 +47,11 @@
                     <span class="author-title text-sm text-gray-500">Founder & CEO Goodiez</span>
                     <div class="author-logo flex-shrink-0 w-20 h-20 mt-2">
                         <!-- Goodiez Logo -->
-                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757712263/unnamed_yaif9r.png" alt="Goodiez Logo" class="w-full h-full object-contain">
+                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/unnamed_yaif9r.png" alt="Goodiez Logo" class="w-full h-full object-contain">
                     </div>
                 </div>
                 <!-- John Park image -->
-                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757711669/1687489331982_newtra.jpg" alt="John Park">
+                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/1687489331982_newtra.jpg" alt="John Park">
             </div>
         </div>
 
@@ -66,11 +66,11 @@
                     <span class="author-title text-sm text-gray-500">Co-Founder & CEO The SAFE Steps</span>
                     <div class="author-logo flex-shrink-0 w-20 h-20 mt-2">
                         <!-- SAFE Steps Logo -->
-                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757712263/logo-2-2_ae8d8g.png" alt="SAFE Steps Logo" class="w-full h-full object-contain">
+                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/logo-2-2_ae8d8g.png" alt="SAFE Steps Logo" class="w-full h-full object-contain">
                     </div>
                 </div>
                 <!-- Dave Smith image -->
-                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757711669/download_1_szkniv.jpg" alt="Dave Smith">
+                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/download_1_szkniv.jpg" alt="Dave Smith">
             </div>
         </div>
     </div>
