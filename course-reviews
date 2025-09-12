@@ -4,152 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .testimonials-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            max-width: 1200px;
-        }
-
-        .testimonial-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .testimonial-card.large {
-            flex: 1 1 500px;
-        }
-
-        .testimonial-card.small {
-            flex: 1 1 350px;
-        }
-
-        .testimonial-text {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-
-        .testimonial-author-info {
-            display: flex;
-            align-items: center;
-            margin-top: auto;
-        }
-
-        .author-logo {
-            width: 40px;
-            height: 40px;
-            margin-right: 15px;
-        }
-        
-        .author-logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .author-details {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .author-name {
-            font-weight: bold;
-            font-size: 1em;
-        }
-
-        .author-title {
-            font-size: 0.9em;
-            color: #555;
-        }
-        
-        .author-image {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-left: auto;
-        }
-
-        .logo-small img {
-            width: 80px;
-        }
-
-        @media (max-width: 768px) {
-            .testimonials-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .testimonial-card {
-                width: 100%;
-            }
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body>
-    <div class="testimonials-container">
-        <div class="testimonial-card large">
-            <p class="testimonial-text">
+<body class="bg-gray-50 p-4 sm:p-8 flex justify-center">
+
+    <div class="flex flex-wrap justify-center gap-6 max-w-7xl">
+        <!-- Testimonial 1: Large Card -->
+        <div class="testimonial-card flex flex-col justify-between bg-white rounded-2xl shadow-lg p-10 sm:p-12 flex-1 basis-full sm:basis-1/2 min-w-80 max-w-2xl">
+            <p class="testimonial-text text-lg leading-relaxed mb-6 italic">
                 "Ronnie's advice is invaluable. He has been a great resource for me on multiple fronts such as fundraising, making strategic intros and overall planning."
             </p>
-            <div class="testimonial-author-info">
-                <div class="author-logo">
-                    <img src="YOUR_GNGR_LABS_LOGO_URL" alt="GNGR Labs Logo">
+            <div class="testimonial-author-info flex items-center mt-auto">
+                <div class="author-details flex flex-col mr-6">
+                    <span class="author-name font-bold text-base">Namik Soltan</span>
+                    <span class="author-title text-sm text-gray-500">Founder & CEO GNGR Labs</span>
+                    <div class="author-logo flex-shrink-0 w-20 h-20 mt-2">
+                        <!-- GNGR Labs Logo -->
+                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757712263/fe25a1b08844b3b3c1a6af44735e150b.w2896.h747_piu0lk.png" alt="GNGR Labs Logo" class="w-full h-full object-contain">
+                    </div>
                 </div>
-                <div class="author-details">
-                    <span class="author-name">Namik Soltan</span>
-                    <span class="author-title">Founder & CEO GNGR Labs</span>
-                </div>
-                <img class="author-image" src="YOUR_NAMIK_SOLTAN_IMAGE_URL" alt="Namik Soltan">
+                <!-- Namik Soltan image -->
+                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757711669/download_kwyuwc.jpg" alt="Namik Soltan">
             </div>
         </div>
 
-        <div class="testimonial-card small">
-            <p class="testimonial-text">
+        <!-- Testimonial 2: Small Card -->
+        <div class="testimonial-card flex flex-col justify-between bg-white rounded-2xl shadow-lg p-10 sm:p-12 flex-1 basis-full sm:basis-1/3 min-w-80">
+            <p class="testimonial-text text-lg leading-relaxed mb-6 italic">
                 "Ronnie has been instrumental to our success thus far, providing strategic guidance, facilitating our user acquisition plan and adjusting our product roadmap."
             </p>
-            <div class="testimonial-author-info">
-                <div class="author-logo">
-                    <img class="logo-small" src="YOUR_GOODIEZ_LOGO_URL" alt="Goodiez Logo">
+            <div class="testimonial-author-info flex items-center mt-auto">
+                <div class="author-details flex flex-col mr-6">
+                    <span class="author-name font-bold text-base">John Park</span>
+                    <span class="author-title text-sm text-gray-500">Founder & CEO Goodiez</span>
+                    <div class="author-logo flex-shrink-0 w-20 h-20 mt-2">
+                        <!-- Goodiez Logo -->
+                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757712263/unnamed_yaif9r.png" alt="Goodiez Logo" class="w-full h-full object-contain">
+                    </div>
                 </div>
-                <div class="author-details">
-                    <span class="author-name">John Park</span>
-                    <span class="author-title">Founder & CEO Goodiez</span>
-                </div>
-                <img class="author-image" src="YOUR_JOHN_PARK_IMAGE_URL" alt="John Park">
+                <!-- John Park image -->
+                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757711669/1687489331982_newtra.jpg" alt="John Park">
             </div>
         </div>
 
-        <div class="testimonial-card small">
-            <p class="testimonial-text">
+        <!-- Testimonial 3: Small Card -->
+        <div class="testimonial-card flex flex-col justify-between bg-white rounded-2xl shadow-lg p-8 pb-6 sm:p-10 sm:pb-8 flex-1 basis-full sm:basis-1/3 min-w-80">
+            <p class="testimonial-text text-lg leading-relaxed mb-6 italic">
                 "Working with Ronnie has been an incredibly enriching experience. I am thankful for his guidance and startup domain expertise. Ronnie is a TRUE pro."
             </p>
-            <div class="testimonial-author-info">
-                <div class="author-logo">
-                    <img class="logo-small" src="YOUR_SAFESTEPS_LOGO_URL" alt="SAFE Steps Logo">
+            <div class="testimonial-author-info flex items-center mt-auto">
+                <div class="author-details flex flex-col mr-6">
+                    <span class="author-name font-bold text-base">Dave Smith</span>
+                    <span class="author-title text-sm text-gray-500">Co-Founder & CEO The SAFE Steps</span>
+                    <div class="author-logo flex-shrink-0 w-20 h-20 mt-2">
+                        <!-- SAFE Steps Logo -->
+                        <img src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757712263/logo-2-2_ae8d8g.png" alt="SAFE Steps Logo" class="w-full h-full object-contain">
+                    </div>
                 </div>
-                <div class="author-details">
-                    <span class="author-name">Dave Smith</span>
-                    <span class="author-title">Co-Founder & CEO The SAFE Steps</span>
-                </div>
-                <img class="author-image" src="YOUR_DAVE_SMITH_IMAGE_URL" alt="Dave Smith">
+                <!-- Dave Smith image -->
+                <img class="author-image w-20 h-20 rounded-full object-cover ml-auto" src="https://res.cloudinary.com/dpm4pcaop/image/upload/v1757711669/download_1_szkniv.jpg" alt="Dave Smith">
             </div>
         </div>
     </div>
