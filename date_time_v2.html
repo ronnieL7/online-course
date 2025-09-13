@@ -9,22 +9,19 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
     </style>
 </head>
 <body>
-
-    <!-- The container for the dynamic text -->
-    <div id="date-time-container" class="text-white text-lg font-bold">
-        <!-- This text will be replaced by JavaScript -->
-        <p id="date-range-text">Date and Time (Dynamic)</p>
-        <p id="location-text"></p>
+    <div class="px-5">
+        <!-- The container for the dynamic text -->
+        <div id="date-time-container" class="text-white text-lg font-bold">
+            <!-- This text will be replaced by JavaScript -->
+            <p id="date-range-text" class="text-blue-500">Date and Time (Dynamic)</p>
+            <p id="location-text" class="mt-2"></p>
+        </div>
     </div>
 
     <script>
