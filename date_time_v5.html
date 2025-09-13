@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Date & Time</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto">
+        <!-- The container for the dynamic text -->
+        <div id="date-time-container" class="text-white text-lg font-bold">
+            <!-- This text will be replaced by JavaScript -->
+            <p id="date-range-text">Date and Time (Dynamic)</p>
+            <p id="location-text" class="mt-2 font-normal"></p>
+        </div>
+    </div>
+
+    <script>
+        // Function to update the date and time text
+        function updateDateTime() {
+            // Define the start and end dates
+            const startDate = new Date();
+            const endDate = new Date();
+            endDate.setDate(startDate.getDate() + 9); // Set the end date 9 days from the start
+
+            const options = { month: 'short', day: 'numeric', year: 'numeric' };
+
+            // Format the dates
+            const formattedStartDate = startDate.toLocaleDateString('en-US', options);
+            const formattedEndDate = endDate.toLocaleDateString('en-US', options);
+
+            // Create the date range string
+            const dateRange = `${formattedStartDate} - ${formattedEndDate}`;
+
+            // Define the location
+            const location = "Online (Zoom)";
+
+            // Get the container elements and update their content
+            const dateContainer = document.getElementById('date-range-text');
+            const locationContainer = document.getElementById('location-text');
+            
+            if (dateContainer && locationContainer) {
+                dateContainer.textContent = dateRange;
+                locationContainer.textContent = `Location: ${location}`;
+            }
+        }
+
+        // Call the function when the page loads
+        window.onload = updateDateTime;
+
+        // Optionally, update the time every minute if needed
+        // setInterval(updateDateTime, 60000);
+    </script>
+</body>
+</html>
